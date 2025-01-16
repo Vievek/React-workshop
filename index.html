@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>BR.F</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#" class="sale">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="user-options">
+                <input type="text" placeholder="Search">
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="favorites"><i class="fas fa-heart"></i></a>
+                <a href="#" class="profile"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-images">
+                <img id="main-image" src="images/shoe1.jpg" alt="Reebok Zig Kinetica 3">
+                <div class="thumbnails">
+                    <img src="images/shoe1.jpg" alt="thumbnail" onclick="changeImage('images/shoe1.jpg')">
+                    <img src="images/shoe2.jpg" alt="thumbnail" onclick="changeImage('images/shoe2.jpg')">
+                    <img src="images/shoe3.jpg" alt="thumbnail" onclick="changeImage('images/shoe3.jpg')">
+                    <img src="images/shoe4.jpg" alt="thumbnail" onclick="changeImage('images/shoe4.jpg')">
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>Shoes Reebok Zig Kinetica 3</h2>
+                <p class="price">$199.00</p>
+                <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9734; (42 reviews)</p>
+
+                <div class="color-options">
+                    <p>Color:</p>
+                    <div class="colors">
+                        <div class="color white"></div>
+                        <div class="color gray"></div>
+                        <div class="color black"></div>
+                    </div>
+                </div>
+
+                <div class="size-options">
+                    <p>Size:</p>
+                    <div class="sizes">
+                        <div class="size-row">
+                            <button onclick="selectSize(this)">40.5</button>
+                            <button onclick="selectSize(this)">41</button>
+                            <button onclick="selectSize(this)">41.5</button>
+                            <button onclick="selectSize(this)">42</button>
+                            <button onclick="selectSize(this)">42.5</button>
+                            <button onclick="selectSize(this)">43</button>
+                            <button onclick="selectSize(this)">43.5</button>
+                            <button onclick="selectSize(this)">44</button>
+                        </div>
+                        <div class="size-row">
+                            <button onclick="selectSize(this)">44.5</button>
+                            <button onclick="selectSize(this)">45</button>
+                            <button onclick="selectSize(this)">46</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="add-to-cart">Add to Cart</button>
+                <p class="free-delivery">Free delivery on orders over $30.0</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+
+        function selectSize(button) {
+            const buttons = document.querySelectorAll('.sizes button');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+        }
+    </script>
+</body>
+</html>
