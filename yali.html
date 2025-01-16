@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Page</title>
+
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 30px;
+            justify-content: space-between;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .logo span {
+            color: #757575;
+        }
+
+        .header input {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            margin-right: 30px;
+        }
+
+        .header .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .actions > div {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .header .actions > div :hover{
+            color: red;
+        }
+
+        .header .actions img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav a {
+            margin: 5px 15px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            margin: 30px auto;
+            padding: 0 50px;
+        }
+
+        .product-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-images img {
+            width: 400px;
+            height: 400px;
+            max-width: 450px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgb(218, 218, 218);
+        }
+
+        .img-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .img-container img {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-details {
+            height: 350px;
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: rgb(51, 0, 255);
+            margin-bottom: 20px;
+        }
+
+        .product-color, .product-size {
+            margin-bottom: 20px ;
+        }
+
+        .product-color img {
+            width: 30px;
+            height: 25px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .sizes button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .sizes button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .add-to-cart button {
+            width: 400px;
+            padding: 15px;
+            margin-left: 150px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .add-to-cart button:hover {
+            background-color: #9c9c9c;
+            color: #000000;
+            border: 1px solid #ffffff;
+        }
+
+        .free-delivery {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">BR.<span>F</span></div>
+        <input type="search" placeholder="Search">
+        <div class="actions">
+            <div>
+                <img src="#" alt="Cart">
+                <span>Cart</span>
+            </div>
+            <div>
+                <img src="#" alt="Favorites">
+                <span>Favorites</span>
+            </div>
+            <div>
+                <img src="#" alt="Profile">
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Sports</a>
+        <a href="#">Brands</a>
+        <a href="#">New</a>
+        <a href="#">Sale</a>
+    </nav>
+
+    <div class="container">
+        <div class="product-images">
+            <img src="../main-product.jpg" alt="Main Product Image">
+            <div class="img-container">
+                <img src="../grey.jpg" alt="img 1">
+                <img src="../grey.jpg" alt="img 2">
+                <img src="../grey.jpg" alt="img 3">
+                <img src="../grey.jpg" alt="img 4">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <div class="product-title">Shoes Reebok Zig Kinetica 3</div>
+            <div class="product-price">$199.00</div>
+            <div class="product-color">
+                <label>Color:</label>
+                <img src="../main-product.jpg" alt="Greean Color">
+            </div>
+            <div class="product-size">
+                <label>Size:</label>
+                <div class="sizes">
+                    <button>40.5</button>
+                    <button>41</button>
+                    <button>42</button>
+                    <button>43</button>
+                    <button>44</button>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button>Add to Cart</button>
+                <div class="free-delivery">Free delivery on orders over $130.00</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
