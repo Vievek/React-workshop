@@ -68,6 +68,45 @@
                 text-decoration-line: underline;
             }
 
+            .product-container{
+                display: flex;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 30px auto;
+                padding: 20px;
+                background-color: rgb(233, 233, 233);
+                border-radius: 5px;
+            }
+
+            .product img{
+                background-color: white;
+                height: 500px;
+                width: 500px;
+            }
+
+            .sample-product img{
+                height: 100px;
+                width: 100px;
+                cursor: pointer;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            .pro-name{
+                font-size: 25px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .pro-color img{
+                height: 30px;
+                width: 30px;
+                border: solid 1px rgb(183, 183, 183);
+            }
+
+
+
+
         </style>
     </head>
 
@@ -97,6 +136,52 @@
              </div>
          </header>
 
+         <div class="product-container">
+            <div class="product">
+                <img src="../git-test/main product.webp" alt="main-image">
+
+                <div class="sample-product">
+                    <img src="../git-test/main-product.jpg" alt="img1">
+                    <img src="../git-test/grey.jpg" alt="img2">
+                    <img src="../git-test/main-product.jpg" alt="img3">
+                    <img src="../git-test/grey.jpg" alt="img4">
+                </div>
+
+            </div>
+
+            <div class="product-details">
+                <div class="pro-name">Shoes Reebok Zig Kinetica 3</div>
+
+                <div class="pro-price">$199.00</div>
+
+                <div class="pro-color">
+                    <label>Color:</label>
+                    <img src="../git-test/grey.jpg" alt="greem img">
+                </div>
+
+                <div class="pro-size">
+                    <label>Sice:</label>
+
+                    <div>
+                        <button>40.5</button>
+                        <button>41</button>
+                        <button>42</button>
+                        <button>43</button>
+                        <button>44</button>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <button>Add to Cart</button>
+                        <div class="free-delivery">Free delivery on orders over $130.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        
+            
+        
 
     </body>
 </html>
