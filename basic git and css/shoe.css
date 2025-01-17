@@ -1,0 +1,21 @@
+body {
+  margin: 0, auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+    font-size: 50px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+.searchbar input{
+    border-radius:2px;
+}
