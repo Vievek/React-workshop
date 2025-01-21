@@ -1,42 +1,192 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  background-color: rgb(244, 244, 244);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header{
+  display: inline;
+  justify-content: space-around;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  border-bottom: solid 2px rgb(221, 221, 221);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logo{
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.card {
-  padding: 2em;
+.logo span{
+  color: rgb(167, 167, 167);
 }
 
-.read-the-docs {
-  color: #888;
+input{
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 25px;
+  width: 350px;
+}
+
+.icon img{
+  height: 35px;
+  width: 35px;
+}
+
+.menu{
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  height: 23px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu a:hover{
+  color: blue;
+}
+
+.product-container{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  height: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+  
+}
+
+.Product{
+  background-color: white ;
+  padding: 20px 20px;
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 10px;
+}
+
+.Product img{
+  height: 350px;
+  width: 400px;
+}
+
+.sample-product{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(240, 240, 240);
+  padding: 5px 5px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.sample-product img{
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.product-details{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px 10px;
+  /*height: 450px;*/
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 10px;
+}
+
+.pro-name{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.pro-price{
+  font-size: 25px;
+  color: blue;
+
+}
+
+.pro-color{
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.pro-color img{
+  height: 20px;
+  width: 30px;
+  border: solid 1px rgb(183, 183, 183);
+}
+
+.pro-size{
+  margin: 10px 0;
+}
+
+.pro-size label{
+  font-size: 20px;
+}
+
+.size-button{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.size-button button{
+  height: 40px;
+  width: 60px;
+  background-color: rgb(209, 209, 209);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.size-button button:hover{
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  border: 1px solid rgb(169, 169, 169);
+}
+
+.add-to-cart{
+  display: flex;
+  justify-content: center;
+}
+
+.add-to-cart button{
+  height: 50px;
+  width: 300px;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(93, 93, 93);
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.add-to-cart button:hover{
+  cursor: pointer;
+  background-color: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.free-delivery p{
+  font-size: 15px;
+  margin: 5px 0;
 }
