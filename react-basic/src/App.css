@@ -104,6 +104,7 @@ input{
   display: flex;
   flex-direction: column;
   background-color: white;
+  width: 420px;
   padding: 10px 10px;
   border: 1px solid rgb(227, 227, 227);
   border-radius: 10px;
