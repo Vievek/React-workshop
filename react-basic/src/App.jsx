@@ -7,10 +7,11 @@ function App() {
   return (
     <>
       <Nav />
-      <Product />
-      <ProductDetails/>
+      <div className='product-container'>
+        <Product />
+        <ProductDetails/>
+      </div>
       
-  
     </>
   );
 }

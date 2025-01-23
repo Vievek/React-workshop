@@ -64,7 +64,7 @@ input{
   display: flex;
   justify-content: space-evenly;
   max-width: 1200px;
-  height: 500px;
+  height: auto;
   margin: 30px auto;
   padding: 20px;
   background-color: rgb(233, 233, 233);
@@ -105,7 +105,6 @@ input{
   flex-direction: column;
   background-color: white;
   padding: 10px 10px;
-  /*height: 450px;*/
   border: 1px solid rgb(227, 227, 227);
   border-radius: 10px;
 }
@@ -189,4 +188,28 @@ input{
 .free-delivery p{
   font-size: 15px;
   margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+  
+  input{
+    display: none;
+  }
+
+  .product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(220, 220, 220);
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 50px
+  }
+
+  
+  
 }
