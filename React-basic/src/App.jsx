@@ -1,5 +1,6 @@
 import React from 'react'
 import Test from './Test'
+import UseState from './UseState'
 
 function App() {
   const person = {
@@ -20,6 +21,7 @@ function App() {
     <Test sry={"hi"} name={person.name} age={person.age} add={person.address.city}/>
     <hr></hr>
     <Test {...person }/>
+    <UseState/>
     </>
     
   )
