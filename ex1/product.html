@@ -73,10 +73,112 @@
       justify-content:space-between;
     }
 
-    .detailsbar{
-      display:flex;
-      justify-content:space-evenly;
-    }
+    .shoedetails {
+    padding: 20px;
+    width: 50%; /* Adjust width for better alignment */
+    font-family: Arial, sans-serif;
+  }
+
+  .detailsbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .detailsbar h5 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .detailsbar h4 {
+    font-size: 20px;
+    color: #333;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
+  }
+
+  .star {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+  }
+
+  .star i {
+    color: gold;
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d9534f; /* Red for price */
+    margin: 15px 0;
+  }
+
+  .shoe-color h6 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .scolor {
+    display: flex;
+    gap: 10px;
+  }
+
+  .Size h4 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .Size h6 {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .Size h6:hover {
+    background-color: #f7f7f7;
+  }
+
+  .add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .add-to-cart input[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .add-to-cart input[type="button"]:hover {
+    background-color: #0056b3;
+  }
+
+  .add-to-cart i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #444;
+  }
+
+  .add-to-cart i:hover {
+    color: red;
+  }
   </style>
 </head>
 <body>
@@ -137,35 +239,33 @@
     <div class="shoedetails">
       <div class="detailsbar">
         <div>
-        <i class="bi bi-person-circle"></i>
-        <h5>Reebok</h5>
+          <i class="bi bi-person-circle"></i>
+          <h5>Reebok</h5>
         </div>
         <h4>HR1343ROO--8</h4>
       </div>
-      <div class="title">
-        Shoes REEbok Zig Kinetica 3
-      </div>
+    
+      <div class="title">Shoes REEbok Zig Kinetica 3</div>
+    
       <div class="star">
-        <div><i class="bi bi-star-fill"></i></div>
-        <div><i class="bi bi-star-fill"></i></div>
-        <div><i class="bi bi-star-fill"></i></div>
-        <div><i class="bi bi-star-fill"></i></div>
-        <div><i class="bi bi-star-fill"></i></div>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
       </div>
-
-      <div class="price">
-        $199.00
-      </div>
-
+    
+      <div class="price">$199.00</div>
+    
       <div class="shoe-color">
-        <h6>colors</h6>
+        <h6>Colors</h6>
         <div class="scolor">
           <img src="pic1.jpeg" height="50px" width="50px">
           <img src="pic2.jpeg" height="50px" width="50px">
           <img src="pic5.jpeg" height="50px" width="50px">
         </div>
       </div>
-
+    
       <div class="Size">
         <h4>Size</h4>
         <h6>40</h6>
@@ -178,10 +278,10 @@
         <h6>78</h6>
         <h6>23</h6>
       </div>
-
-      <div class="add to cart">
-        <div><input type="button"></div>
-        <div><i class="bi bi-heart"></i></div>
+    
+      <div class="add-to-cart">
+        <input type="button" value="Add to Cart">
+        <i class="bi bi-heart"></i>
       </div>
     </div>
   </div>
