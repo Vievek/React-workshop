@@ -1,42 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container{
-            display: flex;
-            place-items: center;
-            justify-content: space-between;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .navbar{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+    }
+
+    .icon{
+      display: flex;
+      gap: 15px;
+      font-size: 30px;
+    }
+
+    .search-box {
+      position: relative;
+      width: 300px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 40px; /* Add space for the icon */
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+    }
+
+    .search-box i {
+      position: absolute;
+      top: 50%;
+      left: 10px; /* Adjust icon position */
+      transform: translateY(-50%);
+      color: #aaa;
+      font-size: 20px;
+    }
+    .menubar{
+      display: flex;
+      justify-content:left;
+      gap: 50px;
+    }
+    .line{
+      border: none; /* Remove default border */
+      height: 2px; /* Set thickness */
+      background-color: #aaa;
+    }
+    .shoenav{
+      display: flex;
+      gap: 14px;
+      color: #aaa;
+      padding:10px;
+    }
+
+    .bigshoe{
+      size: 50px;
+      height: 500px;
+      width: 500px;
+    }
+    .smallshoe{
+      display: flex;
+      width: 500px;
+      justify-content:space-between;
+      padding-top: 10px;
+    }
+
+    .container{
+      display: flex;
+      justify-content:space-between;
+    }
+  </style>
 </head>
 <body>
-    <!-- navbar -->
-     <nav class="navbar">
-        <div class ="container">
-        <!-- logo -->
-        <h1 class="logo">BR.F</h1>
+  <!-- navbar -->
+  <div class="navbar">
+    <!-- logo -->
+    <h1>BR.<span>F</span></h1>
+    <!-- search bar -->
+     <div class="search-box">
+      <i class="bi bi-search"></i>
+      <input type="text" placeholder="search" type="text">
+    </div>
 
-        <!-- search bar -->
-        <input type="text" class="search-box" placeholder="Search">
-
+    <!-- icon -->
+    <div class="icon">
         <!-- cart -->
-        <h5>cart</h5>
-
-        <!-- favourite -->
-        <h5>favourite</h5>
-
-        <!-- profile  -->
-        <h6>img</h6><img src ="" >
-
-        </div> 
-    </nav>
-
-
-
-
+        <i class="bi bi-bag-heart"></i>
+        <!-- fav -->
+        <i class="bi bi-heart-fill"></i>
+        <!-- profile pic -->
+        <i class="bi bi-person-circle"></i>
+    </div>
     
+  </div>
+
+  <!-- menubar -->
+  <div class="menubar">
+    <div>Women</div>
+    <div>Men</div>
+    <div>Kids</div>
+    <div>Sports</div>
+    <div>Brands</div>
+    <div>New</div>
+    <div>Sale</div>
+  </div>
+  <!-- line -->
+   <hr class="line">
+
+  <div class="container">
+    <div class="displayshoe">
+      <div class="shoenav">
+        <div>Clothes and shoes .</div>
+        <div>Shoes .</div>
+        <div>Reebox</div>
+      </div>
+      <div class="bigshoe">
+        <img src="pic3.jpeg" height="500px" width="500px">
+      </div>
+
+      <div class="smallshoe">
+        <img src="pic1.jpeg" height="100px" width="100px">
+        <img src="pic2.jpeg" height="100px" width="100px">
+        <img src="pic5.jpeg" height="100px" width="100px">
+        <img src="pic4.jpeg" height="100px" width="100px">
+      </div>
+    </div>
+
+    <div class="shoedetails">
+      <div>hi</div>
+
+    </div>
+  </div>
+
 </body>
 </html>
