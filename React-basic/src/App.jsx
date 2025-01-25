@@ -1,6 +1,7 @@
 import React from 'react'
 import Test from './Test'
 import UseState from './UseState'
+import CartComponent from './CartComponent'
 
 function App() {
   const person = {
@@ -16,12 +17,13 @@ function App() {
 }
   return (
     <>
-    <h1>hello</h1>
+    {/* <h1>hello</h1>
     <h2>hi</h2>
     <Test sry={"hi"} name={person.name} age={person.age} add={person.address.city}/>
     <hr></hr>
-    <Test {...person }/>
+    <Test {...person }/> */}
     <UseState/>
+    {/* <CartComponent/> */}
     </>
     
   )

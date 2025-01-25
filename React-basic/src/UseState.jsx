@@ -19,7 +19,7 @@ function UseState() {
       <hr />
       <div>{counter}</div>
       {/* <button onClick={incrementCounter}>Increment</button> */}
-      <Button functions={incrementCounter} />
+      <Button functions={incrementCounter}  children="+" />
     </>
   );
 }
