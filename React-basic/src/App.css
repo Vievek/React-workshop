@@ -1,42 +1,186 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
   }
-  to {
-    transform: rotate(360deg);
+
+  .icon{
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .search-box {
+    position: relative;
+    width: 300px;
   }
+
+  .search-box input {
+    width: 100%;
+    padding: 10px 40px; /* Add space for the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+
+  .search-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust icon position */
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 20px;
+  }
+  .menubar{
+    display: flex;
+    justify-content:left;
+    gap: 50px;
+  }
+  .line{
+    border: none; /* Remove default border */
+    height: 2px; /* Set thickness */
+    background-color: #aaa;
+  }
+  .shoenav{
+    display: flex;
+    gap: 14px;
+    color: #aaa;
+    padding:10px;
+  }
+
+  .bigshoe{
+    size: 50px;
+    height: 500px;
+    width: 500px;
+  }
+  .smallshoe{
+    display: flex;
+    width: 500px;
+    justify-content:space-between;
+    padding-top: 10px;
+  }
+
+  .container{
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .shoedetails {
+  padding: 20px;
+  width: 50%; /* Adjust width for better alignment */
+  font-family: Arial, sans-serif;
 }
 
-.card {
-  padding: 2em;
+.reebok{
+  display: flex;
+  justify-content:space-between;
+  gap:10px;
 }
 
-.read-the-docs {
-  color: #888;
+.detailsbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.detailsbar h5 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.detailsbar h4 {
+  font-size: 20px;
+  color: #333;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  margin: 10px 0;
+}
+
+.star {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.star i {
+  color: gold;
+  font-size: 18px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d9534f; /* Red for price */
+  margin: 15px 0;
+}
+
+.shoe-color h6 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.scolor {
+  display: flex;
+  gap: 10px;
+}
+
+.Size h4 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.Size h6 {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Size h6:hover {
+  background-color: #f7f7f7;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.add-to-cart input[type="button"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+.add-to-cart i {
+  font-size: 24px;
+  cursor: pointer;
+  color: #444;
+}
+
+.add-to-cart i:hover {
+  color: red;
 }
