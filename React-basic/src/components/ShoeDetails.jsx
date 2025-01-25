@@ -22,9 +22,9 @@ function ShoeDetails(){
       <div className="shoe-color">
         <h6>Colors</h6>
         <div className="scolor">
-          <img src="./assets/pic1.jpeg" alt="Color 1" />
-          <img src="./assets/pic2.jpeg" alt="Color 2" />
-          <img src="./assets/pic5.jpeg" alt="Color 3" />
+          <img src="pic1.jpeg" alt="Color 1" />
+          <img src="pic2.jpeg" alt="Color 2" />
+          <img src="pic5.jpeg" alt="Color 3" />
         </div>
       </div>
       <div className="Size">
