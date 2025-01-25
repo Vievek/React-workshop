@@ -2,6 +2,7 @@ import React from 'react'
 import Test from './Test'
 import UseState from './UseState'
 import CartComponent from './CartComponent'
+import UseEffect from './UseEffect'
 
 function App() {
   const person = {
@@ -21,9 +22,10 @@ function App() {
     <h2>hi</h2>
     <Test sry={"hi"} name={person.name} age={person.age} add={person.address.city}/>
     <hr></hr>
-    <Test {...person }/> */}
+    <Test {...person }/>
     <UseState/>
-    {/* <CartComponent/> */}
+    <CartComponent/> */}
+    <UseEffect/>
     </>
     
   )
