@@ -32,6 +32,12 @@ function ProductDetails() {
                         <button>47</button>
                     </div>
 
+                    <div className='add-button'>
+                        <button>-</button>
+                        <h1>count</h1>
+                        <button>+</button>
+                    </div>
+
                     <div className="add-to-cart">
                         <button>Add to Cart</button>
                     </div>

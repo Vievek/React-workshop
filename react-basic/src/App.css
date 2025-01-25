@@ -163,6 +163,31 @@ input{
   border: 1px solid rgb(169, 169, 169);
 }
 
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.add-button button{
+  height: 15px;
+  width: 15px;
+  font-size: 10px;
+  border: 1px solid rgb(224, 224, 224);
+  background-color: rgb(255, 255, 255);
+}
+
+.add-button button:hover {
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}
+
+.add-button h1 {
+  font-size: 15px;
+  padding: 0 10px;
+}
+
 .add-to-cart{
   display: flex;
   justify-content: center;
