@@ -184,3 +184,11 @@ body {
 .add-to-cart i:hover {
   color: red;
 }
+
+
+@media (max-width: 768px) {
+  main {
+    height: auto;
+    padding: 10px;
+  }
+}
