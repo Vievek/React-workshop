@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from 'react'
+import Button from './Button'
 
-function Counter() {
-  // Declare a state variable "count" with an initial value of 0
-  const [count, setCount] = useState(0);
-
+function UseState() {
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>Increase</button>
-      <h1>{count}</h1>
-      <button onClick={() => setCount(count - 1)}>Decrease</button>
-      <button onClick={() => setCount(0)}>Reset</button>
+      <button onClick={functions}></button>
     </div>
-  );
+  )
 }
- 
+
+export default UseState

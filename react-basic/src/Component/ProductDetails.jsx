@@ -1,4 +1,5 @@
 import React from 'react'
+import Cart from './Cart'
 
 function ProductDetails() {
   return (
@@ -32,11 +33,7 @@ function ProductDetails() {
                         <button>47</button>
                     </div>
 
-                    <div className='add-button'>
-                        <button>-</button>
-                        <h1>count</h1>
-                        <button>+</button>
-                    </div>
+                    <Cart/>
 
                     <div className="add-to-cart">
                         <button>Add to Cart</button>
