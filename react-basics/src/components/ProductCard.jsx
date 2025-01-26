@@ -1,21 +1,29 @@
 import React from "react";
+import shoeImage from "../assets/shoe.webp"; // Import from src/assets
+import shoe2Image from "../assets/shoe2.jpeg"; // Import from src/assets
+import shoe3Image from "../assets/shoe3.jpeg"; // Import from src/assets
+import shoe4Image from "../assets/shoe4.jpeg"; // Import from src/assets
+import logoImage from "../assets/logo.png"; // Import from src/assets
+import whiteImage from "../assets/white.webp"; // Import from src/assets
+import blackImage from "../assets/black.webp"; // Import from src/assets
 
 function ProductCard() {
   return (
     <div className="card">
       <div className="imgSection">
-        <img src="/assets/shoe.webp" alt="reebok" className="bigImage" />
+        {/* Use imported images for consistency */}
+        <img src={shoeImage} alt="reebok" className="bigImage" />
         <div className="smallImages">
-          <img src="/assets/shoe.webp" alt="shoe1" width="100px" height="100px" />
-          <img src="/assets/shoe2.jpeg" alt="shoe2" width="100px" height="100px" />
-          <img src="/assets/shoe3.jpeg" alt="shoe3" width="100px" height="100px" />
-          <img src="/assets/shoe4.jpeg" alt="shoe4" width="100px" height="100px" />
+          <img src={shoeImage} alt="shoe1" width="100px" height="100px" />
+          <img src={shoe2Image} alt="shoe2" width="100px" height="100px" />
+          <img src={shoe3Image} alt="shoe3" width="100px" height="100px" />
+          <img src={shoe4Image} alt="shoe4" width="100px" height="100px" />
         </div>
       </div>
 
       <div className="detailsSection">
         <div className="brand-logo">
-          <img src="/assets/logo.png" alt="logo" />
+          <img src={logoImage} alt="logo" />
           <span>Reebok</span>
         </div>
 
@@ -37,9 +45,9 @@ function ProductCard() {
           <span>&gt;</span>
           <a href="#">White</a>
           <div className="color-images">
-            <img src="/assets/shoe.webp" alt="gray" />
-            <img src="/assets/white.webp" alt="white" />
-            <img src="/assets/black.webp" alt="black" />
+            <img src={shoeImage} alt="gray" />
+            <img src={whiteImage} alt="white" />
+            <img src={blackImage} alt="black" />
           </div>
         </div>
 
