@@ -1,0 +1,68 @@
+1.html < react - to use packages
+2.vite - building
+v dom
+3.components - code reusablity
+4.props - parameter pass components variety
+5.use state = variable store and render
+6. useEffect {
+    component 3 stage 
+    1.intial stage -mounting
+    2.updates
+    3.complete
+
+    all three stage side effect use effect
+
+    useEffect(() => {
+      console.log("hello")
+    
+     return () => {
+       console.log("Component unmounted or effect dependencies changed");
+    }
+    }, [count]);
+
+    1.intial stage side effect // first time render {
+    useEffect(() => {
+      console.log("hello")
+      // api fetxh panni data eduka poram
+    
+    }, []);
+
+    }
+
+    2. component complete aki means vera page poram {
+        // component leave akeka return ka irukira function work akum antha function normala memory leackage ah thaduka use pannuvam
+    useEffect(() => {
+      console.log("hello")
+    
+     return () => {
+       console.log("Component unmounted or effect dependencies changed");
+    }
+    }, []);
+
+    }
+
+    3. component update // use state ethavathu {
+        1.epa ellam update nadakutho apa{
+            useEffect(() => {
+            console.log("hello")
+            
+            return () => {
+            console.log("Component unmounted or effect dependencies changed");
+            }
+            });
+        }
+
+        2.specific ah oru variable change akeka enkaluku side effect nadakonum enda{
+            useEffect(() => {
+            console.log("hello")
+            
+            return () => {
+            console.log("Component unmounted or effect dependencies changed");
+            }
+            }, [variable,var1]);
+
+        }
+    }
+}
+
+7.useRef element selection without rerendering
