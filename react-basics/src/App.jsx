@@ -5,13 +5,17 @@ import Breadcrumb from "./components/Breadcrumb";
 import ProductCard from "./components/ProductCard";
 import "./index.css";
 
+
+
 function App() {
   return (
     <div>
       <Header />
       <MenuBar />
       <Breadcrumb />
+      
       <ProductCard />
+      
     </div>
   );
 }

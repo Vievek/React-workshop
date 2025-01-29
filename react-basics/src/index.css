@@ -310,4 +310,52 @@ a:hover {
 .add-to-cart-section i.fa-heart:hover {
   color: gray; /* Subtle hover effect */
 }
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter button {
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color:transparent;
+  cursor: pointer;
+  
+}
+
+.counter button:hover {
+  .counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .counter button {
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .counter button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .counter span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+}
+
+.counter span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 

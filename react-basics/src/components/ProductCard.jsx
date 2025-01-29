@@ -6,6 +6,7 @@ import shoe4Image from "../assets/shoe4.jpeg"; // Import from src/assets
 import logoImage from "../assets/logo.png"; // Import from src/assets
 import whiteImage from "../assets/white.webp"; // Import from src/assets
 import blackImage from "../assets/black.webp"; // Import from src/assets
+import Counter from "./Counter";
 
 function ProductCard() {
   return (
@@ -67,6 +68,8 @@ function ProductCard() {
             <button>46</button>
           </div>
         </div>
+
+        <Counter />
 
         <div className="add-to-cart-section">
           <button>Add to cart</button>
