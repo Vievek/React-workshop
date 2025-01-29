@@ -5,6 +5,7 @@ import CartComponent from './CartComponent'
 import UseEffect from './UseEffect'
 import Button from './button'
 import UseRef from './UseRef'
+import UseMemo from './UseMemo'
 
 function App() {
   const person = {
@@ -34,7 +35,8 @@ function App() {
       <br/>
       <Button children="hello" cls="outline-button" /> */}
 
-      <UseRef/>
+      {/* <UseRef/> */}
+      <UseMemo/>
     </>
   );
 

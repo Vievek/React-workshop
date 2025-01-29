@@ -66,3 +66,4 @@ v dom
 }
 
 7.useRef element selection without rerendering
+8.UseMemo when 2/more states are there in component i want to render function only when that usestate triggered
