@@ -7,6 +7,7 @@ import logoImage from "../assets/logo.png"; // Import from src/assets
 import whiteImage from "../assets/white.webp"; // Import from src/assets
 import blackImage from "../assets/black.webp"; // Import from src/assets
 import Counter from "./Counter";
+import UserRequestBox from "./UserRequestBox";
 
 function ProductCard() {
   return (
@@ -19,6 +20,9 @@ function ProductCard() {
           <img src={shoe2Image} alt="shoe2" width="100px" height="100px" />
           <img src={shoe3Image} alt="shoe3" width="100px" height="100px" />
           <img src={shoe4Image} alt="shoe4" width="100px" height="100px" />
+        </div>
+        <div>
+        <UserRequestBox/>
         </div>
       </div>
 
@@ -75,6 +79,7 @@ function ProductCard() {
           <button>Add to cart</button>
           <i className="fa-regular fa-heart"></i>
         </div>
+        
 
         <div className="delivery-info">
           <i className="fa-solid fa-truck"></i>
