@@ -4,7 +4,7 @@ import Button from './Button'
 function UseState() {
   return (
     <div>
-      <button onClick={onClick}></button>
+      <Button onClick={onClick}>{children}</Button>
     </div>
   )
 }

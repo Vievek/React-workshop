@@ -6,9 +6,9 @@ function Cart() {
   return (
     <>
         <div className='add-button'>
-            <button className='in-dec-button' onClick={() => setNo((preNo) => preNo + 1)} > + </button>
+            <Button onClick={() => setNo((preNo) => preNo + 1)} children='+'></Button>
             <div>{no}</div>
-            <button className='in-dec-button' onClick={() => setNo((preNo) => preNo - 1)} > - </button>
+            <Button onClick={() => setNo((preNo) => preNo - 1)} children='-'></Button>
         </div>
     </>
   );
