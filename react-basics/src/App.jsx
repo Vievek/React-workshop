@@ -4,16 +4,17 @@ import MenuBar from "./components/MenuBar";
 import Breadcrumb from "./components/Breadcrumb";
 import ProductCard from "./components/ProductCard";
 import "./index.css";
+import WelcomePopup from "./components/WelcomePopup";
 
 
 
 function App() {
   return (
     <div>
+      <WelcomePopup/>
       <Header />
       <MenuBar />
       <Breadcrumb />
-      
       <ProductCard />
       
     </div>

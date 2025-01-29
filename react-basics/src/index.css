@@ -155,14 +155,13 @@ a:hover {
 
 .detailsSection {
   display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  align-items: flex-start; /* Align items to the left */
-  max-width: 400px; /* Set a consistent width for the details section */
-  gap: 15px; /* Add spacing between elements */
-  font-family: Arial, sans-serif; /* Choose a clean, readable font */
+  flex-direction: column; 
+  align-items: flex-start;
+  max-width: 400px; 
+  gap: 15px; 
+  font-family: Arial, sans-serif; 
 }
 
-/* Product Title and Logo */
 .detailsSection img {
   vertical-align: middle;
   margin-right: 10px;
@@ -175,7 +174,6 @@ a:hover {
   color: #333;
 }
 
-/* Star Ratings */
 .detailsSection i.fa-star {
   color: gold;
   margin-right: 3px;
@@ -191,7 +189,6 @@ a:hover {
   color: gray;
 }
 
-/* Price Styling */
 .detailsSection h1 {
   font-size: 28px;
   font-weight: bold;
@@ -199,7 +196,6 @@ a:hover {
   margin: 0;
 }
 
-/* Color and Size Options */
 .detailsSection a {
   text-decoration: none;
   font-size: 16px;
@@ -212,10 +208,10 @@ a:hover {
 }
 
 .detailsSection img {
-  width: 20px; /* Reduced size */
-  height: 20px; /* Reduced size */
-  margin-right: 10px; /* Add some spacing between the logo and text */
-  vertical-align: middle; /* Align the logo with the text */
+  width: 20px; 
+  height: 20px; 
+  margin-right: 10px; 
+  vertical-align: middle;
 }
 
 .detailsSection .color-section img {
