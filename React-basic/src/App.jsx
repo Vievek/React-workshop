@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import Menubar from './components/Menubar.jsx';
 import ShoeDisplay from './components/ShoeDisplay.jsx';
 import ShoeDetails from './components/ShoeDetails.jsx';
+// import NoOfProduct from './components/NoOfProduct.jsx';
 import './index.css'; 
 import "./App.css"; 
 
@@ -16,6 +17,7 @@ function App(){
       <div className="container">
         <ShoeDisplay />
         <ShoeDetails />
+        {/* <NoOfProduct /> */}
       </div>
     </div>
   );

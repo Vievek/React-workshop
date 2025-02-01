@@ -1,4 +1,5 @@
 import React from 'react';
+import NoOfProduct from './NoOfProduct';
 
 function ShoeDetails(){
   return (
@@ -39,6 +40,7 @@ function ShoeDetails(){
         <h6>78</h6>
         <h6>23</h6>
       </div>
+      <NoOfProduct />
       <div className="add-to-cart">
         <input type="button" value="Add to Cart" />
         <i className="bi bi-heart"></i>
